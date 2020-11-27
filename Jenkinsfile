@@ -10,9 +10,11 @@ pipeline {
       }
     }
   }
-  stage('build') {
-    steps {
-      sh 'npm --version'
+  stages {
+    stage('build') {
+      steps {
+        sh 'npm --version'
+      }
     }
   }
 }
